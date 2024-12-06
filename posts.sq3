@@ -1,0 +1,12 @@
+CREATE TABLE posts (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    date TEXT,
+    title VARCHAR(10),
+    question1 TEXT,
+    question2 TEXT,
+    question3 TEXT,
+    question4 TEXT,
+    question5 TEXT
+);
+
+insert into posts values (1, '20241119', '人生', 'aaa', 'bbb', 'ccc', 'ddd', 'eee');

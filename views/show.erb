@@ -1,0 +1,18 @@
+<p>項目：<%= @post.title %><p>
+
+<p>Q1：あなたにとって<%= @post.title %>とは何ですか？<p>
+<%= @post.question1 %>
+
+<p>Q2：なぜその言葉を選びましたか？<p>
+<%= @post.question2 %>
+
+<p>Q3：その思いを抱くに至った具体的なエピソードは何ですか？<p>
+<%= @post.question3 %>
+
+<p>Q4：ここまでの分析で気づいたことは何ですか？<p>
+<%= @post.question4 %>
+
+<p>Q5：Q2～Q4の回答から考えらえれる，大事にしている価値観は何ですか？<p>
+<%= @post.question5 %>
+
+<p><a href="/check">確認画面に戻る</a>   <a href='/destroy/<%= @post.id %>'>削除</a><p>
