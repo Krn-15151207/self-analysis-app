@@ -1,0 +1,18 @@
+<h2>回答履歴</h2>
+<p></p>
+
+<table border>
+    <tr>
+        <th>回答日</th>
+        <th>項目</th>
+    </tr>
+    <% @posts.each do |post| %>
+        <tr>    
+            <td><%= post.date %></td>
+            <td><a href='/show/<%= post.id %>'><%= post.title %></a></td>
+        </tr>
+    <% end %>
+</table>
+
+<p></p>
+<a href='/'>戻る</a>
